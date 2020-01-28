@@ -133,6 +133,10 @@ const messages = defineMessages({
     id: 'Table color inverted',
     defaultMessage: 'Table color inverted',
   },
+  headerCell: {
+    id: 'Header cell',
+    defaultMessage: 'Header cell',
+  },
   striped: {
     id: 'Stripe alternate rows with color',
     defaultMessage: 'Stripe alternate rows with color',
@@ -713,7 +717,7 @@ class Edit extends Component {
               <Segment attached>
                 <Field
                   id="celltype"
-                  title="Header cell"
+                  title={this.props.intl.formatMessage(messages.headerCell)}
                   type="boolean"
                   value={
                     this.props.data.table &&
