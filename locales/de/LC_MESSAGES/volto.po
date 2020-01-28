@@ -1479,6 +1479,10 @@ msgstr "Allgemein"
 msgid "delete"
 msgstr "Löschen"
 
+#: components/manage/Widgets/FileWidget
+msgid "delete file"
+msgstr ""
+
 #: config/Blocks
 msgid "description"
 msgstr "Beschreibung"

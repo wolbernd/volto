@@ -7,10 +7,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Form, Grid, Input, Label, Button } from 'semantic-ui-react';
 import { map } from 'lodash';
+import { defineMessages, injectIntl } from 'react-intl';
 import { readAsDataURL } from 'promise-file-reader';
 
 import deleteSVG from '../../../icons/delete.svg';
 import { Icon } from '../../../components';
+
+const messages = defineMessages({
+  deleteFile: {
+    id: 'delete file',
+    defaultMessage: 'delete file',
+  },
+});
 
 /**
  * FileWidget component class.
@@ -70,7 +78,9 @@ const FileWidget = ({
                   icon
                   basic
                   className="delete-button"
-                  aria-label="delete file"
+                  aria-label={this.props.intl.formatMessage(
+                    messages.deleteFile,
+                  )}
                   onClick={() => {
                     onChange(id, null);
                     fileInput.current.inputRef.value = null;
@@ -129,4 +139,4 @@ FileWidget.defaultProps = {
   value: null,
 };
 
-export default FileWidget;
+export default injectIntl(FileWidget);
