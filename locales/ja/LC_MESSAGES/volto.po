@@ -24,11 +24,11 @@ msgstr "アクセシビリティ"
 
 #: components/theme/Register/Register
 msgid "Account Registration Completed"
-msgstr ""
+msgstr "アカウント登録が完了しました"
 
 #: components/theme/PasswordReset/PasswordReset
 msgid "Account activation completed"
-msgstr ""
+msgstr "アカウントが有効になりました"
 
 #: components/manage/Controlpanels/ModerateComments
 msgid "Action"
@@ -60,6 +60,10 @@ msgstr "説明を追加..."
 
 #: components/manage/Form/Form
 msgid "Add block..."
+msgstr "ブロックを追加..."
+
+#: components/manage/Blocks/Listing/QuerystringWidget
+msgid "Add criteria"
 msgstr ""
 
 #: components/manage/Widgets/SchemaWidget
@@ -90,15 +94,19 @@ msgstr "グループに追加"
 msgid "Add {type}"
 msgstr "{type} を追加"
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
+#: components/manage/Blocks/Maps/MapsSidebar
+#: components/manage/Blocks/Video/VideoSidebar
 msgid "Alignment"
-msgstr ""
+msgstr "配置"
 
 #: components/manage/Contents/Contents
 msgid "All"
 msgstr "すべて"
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
 msgid "Alt text"
 msgstr "代替テキスト"
 
@@ -131,7 +139,7 @@ msgstr "戻る"
 
 #: components/manage/Diff/Diff
 msgid "Base"
-msgstr ""
+msgstr "比較元"
 
 #: components/manage/Sidebar/Sidebar
 msgid "Block"
@@ -139,7 +147,7 @@ msgstr "ブロック"
 
 #: components/theme/Login/Login
 msgid "Both email address and password are case sensitive, check that caps lock is not enabled."
-msgstr ""
+msgstr "メールアドレスとパスワードは大文字小文字が区別されます。Caps Lockキーの状態に注意してください。"
 
 #: components/theme/Breadcrumbs/Breadcrumbs
 msgid "Breadcrumbs"
@@ -155,7 +163,7 @@ msgstr "参照"
 
 #: components/manage/Sharing/Sharing
 msgid "By default, permissions from the container of this item are inherited. If you disable this, only the explicitly defined sharing permissions will be valid. In the overview, the symbol {inherited} indicates an inherited value. Similarly, the symbol {global} indicates a global role, which is managed by the site administrator."
-msgstr ""
+msgstr "デフォルトでは、このアイテムのコンテナからのパーミッションが継承されます。これを無効にすると、明示的に定義されたパーミッションだけが有効になります。概要画面で {inherited} シンボルが継承された値を示します。同様に、{global} シンボルはグローバルロールを示します。これはサイト管理者によって管理されるものです。"
 
 #: components/manage/Add/Add
 #: components/manage/Contents/ContentsToolbar
@@ -172,10 +180,9 @@ msgstr "キャンセル"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Cell"
-msgstr ""
+msgstr "セル"
 
 #: components/manage/Blocks/Maps/Edit
-#: components/manage/Blocks/Video/Edit
 #: helpers/AlignBlock/AlignBlock
 msgid "Center"
 msgstr ""
@@ -253,6 +260,10 @@ msgstr "お問い合わせ"
 msgid "Contact form"
 msgstr "お問い合わせフォーム"
 
+#: components/manage/Blocks/Listing/Edit
+msgid "Contained items"
+msgstr ""
+
 #: components/manage/Contents/Contents
 #: components/manage/Toolbar/Toolbar
 msgid "Contents"
@@ -270,11 +281,15 @@ msgstr "著作権"
 
 #: components/manage/Contents/ContentsPropertiesModal
 msgid "Copyright statement or other rights information on this item."
-msgstr ""
+msgstr "このアイテムの著作権宣言文または他の権利情報"
 
 #: components/manage/Contents/ContentsPropertiesModal
 msgid "Creators"
 msgstr "作成者"
+
+#: components/manage/Blocks/Listing/QuerystringWidget
+msgid "Criteria"
+msgstr ""
 
 #: components/manage/Preferences/ChangePassword
 msgid "Current password"
@@ -311,7 +326,7 @@ msgstr "日付"
 #: components/theme/PasswordReset/RequestPasswordReset
 #: components/theme/Register/Register
 msgid "Default"
-msgstr ""
+msgstr "基本"
 
 #: components/manage/Contents/Contents
 #: components/manage/Contents/ContentsItem
@@ -329,19 +344,19 @@ msgstr "削除"
 
 #: components/manage/Controlpanels/UsersControlpanel
 msgid "Delete Group"
-msgstr ""
+msgstr "グループを削除"
 
 #: components/manage/Controlpanels/UsersControlpanel
 msgid "Delete User"
-msgstr ""
+msgstr "ユーザを削除"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Delete col"
-msgstr ""
+msgstr "列を削除"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Delete row"
-msgstr ""
+msgstr "行を削除"
 
 #: components/manage/Contents/Contents
 msgid "Descending"
@@ -362,15 +377,15 @@ msgstr "説明"
 
 #: components/manage/Diff/Diff
 msgid "Diff"
-msgstr ""
+msgstr "差分"
 
 #: components/manage/Diff/Diff
 msgid "Difference between revision {one} and {two} of {title}"
-msgstr ""
+msgstr "{title} のリビジョン {one} と {two} の差分"
 
 #: components/theme/Footer/Footer
 msgid "Distributed under the {license}."
-msgstr ""
+msgstr "{license} の下で配布されています。"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Divide each row into separate cells"
@@ -378,27 +393,27 @@ msgstr ""
 
 #: components/manage/Contents/Contents
 msgid "Do you really want to delete the following items?"
-msgstr ""
+msgstr "以下のアイテムを削除してよろしいですか?"
 
 #: components/manage/Controlpanels/UsersControlpanel
 msgid "Do you really want to delete the group {groupname}?"
-msgstr ""
+msgstr "グループ {groupname} を削除してよろしいですか?"
 
 #: components/manage/Controlpanels/UsersControlpanel
 msgid "Do you really want to delete the user {username}?"
-msgstr ""
+msgstr "ユーザ {username} を削除してよろしいですか?"
 
 #: components/manage/Delete/Delete
 msgid "Do you really want to delete this item?"
-msgstr ""
+msgstr "このアイテムを削除してよろしいですか?"
 
 #: components/manage/Sidebar/Sidebar
 msgid "Document"
-msgstr "ページ"
+msgstr "文書"
 
 #: components/manage/Contents/ContentsUploadModal
 msgid "Drag and drop files from your computer onto this area or click the “Browse” button."
-msgstr ""
+msgstr "ここにファイルをドラッグ、または「参照」ボタンをクリック"
 
 #: components/manage/Preferences/PersonalInformation
 #: components/theme/Register/Register
@@ -441,21 +456,17 @@ msgstr "メール"
 msgid "Email sent"
 msgstr "メール送信"
 
+#: components/manage/Blocks/Maps/Edit
+msgid "Embed code error, please follow the instructions and try again."
+msgstr ""
+
 #: components/manage/Blocks/Maps/View
 msgid "Embeded Google Maps"
 msgstr ""
 
-#: components/manage/Blocks/Maps/Edit
-msgid "Enter Map URL"
-msgstr "地図URLを入力"
-
 #: components/manage/AnchorPlugin/components/LinkButton/AddLinkForm
 msgid "Enter URL or title"
 msgstr "URLまたはタイトルを入力"
-
-#: components/manage/Blocks/Video/Edit
-msgid "Enter Video URL"
-msgstr "ビデオURLを入力"
 
 #: components/theme/Register/Register
 msgid "Enter an email address. This will be your login name. We respect your privacy, and will not give the address away to any third parties or expose it anywhere."
@@ -466,6 +477,10 @@ msgstr ""
 #: components/theme/Register/Register
 msgid "Enter full name, e.g. John Smith."
 msgstr "氏名（フルネーム）を入力。例： Hanako Suzuki や 山田太郎 "
+
+#: components/manage/Blocks/Maps/Edit
+msgid "Enter map Embed Code"
+msgstr ""
 
 #: components/manage/Preferences/ChangePassword
 msgid "Enter your current password."
@@ -499,9 +514,10 @@ msgstr ""
 msgid "Expiration Date"
 msgstr "ナビゲーションに含まない"
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
 msgid "External URL"
-msgstr ""
+msgstr "外部URL"
 
 #: components/manage/Contents/ContentsUploadModal
 msgid "File size"
@@ -513,7 +529,7 @@ msgstr "ファイル名"
 
 #: components/manage/Contents/Contents
 msgid "Filter…"
-msgstr ""
+msgstr "フィルター..."
 
 #: components/manage/Blocks/Table/Edit
 msgid "Fixed width table cells"
@@ -524,7 +540,6 @@ msgid "From"
 msgstr "メールアドレス"
 
 #: components/manage/Blocks/Maps/Edit
-#: components/manage/Blocks/Video/Edit
 #: helpers/AlignBlock/AlignBlock
 msgid "Full"
 msgstr ""
@@ -557,7 +572,7 @@ msgstr ""
 
 #: components/manage/Controlpanels/UsersControlpanel
 msgid "Group created"
-msgstr ""
+msgstr "グループが作成されました"
 
 #: components/manage/Controlpanels/UsersControlpanel
 msgid "Groupname"
@@ -565,7 +580,7 @@ msgstr "グループ名"
 
 #: components/manage/Controlpanels/UsersControlpanel
 msgid "Groups"
-msgstr ""
+msgstr "グループ"
 
 #: components/manage/History/History
 #: components/manage/Toolbar/More
@@ -605,7 +620,8 @@ msgstr ""
 msgid "If you you do not have an account here, head over to the {registrationform}."
 msgstr ""
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
 msgid "Image"
 msgstr "画像"
 
@@ -615,7 +631,7 @@ msgstr "情報"
 
 #: components/manage/Sharing/Sharing
 msgid "Inherit permissions from higher levels"
-msgstr ""
+msgstr "上位レベルからパーミッションを継承する"
 
 #: components/manage/Sharing/Sharing
 msgid "Inherited value"
@@ -623,32 +639,36 @@ msgstr ""
 
 #: components/manage/Blocks/Table/Edit
 msgid "Insert col after"
-msgstr ""
+msgstr "右に列を追加"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Insert col before"
-msgstr ""
+msgstr "左に列を追加"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Insert row after"
-msgstr ""
+msgstr "下に行を追加"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Insert row before"
+msgstr "上に行を追加"
+
+#: components/manage/Blocks/Listing/ListingData
+msgid "Item batch size"
 msgstr ""
 
 #: components/manage/Contents/Contents
 msgid "Item(s) copied."
-msgstr ""
+msgstr "アイテムがコピーされました。"
 
 #: components/manage/Contents/Contents
 msgid "Item(s) cut."
-msgstr ""
+msgstr "アイテムがカットされました。"
 
 #: components/manage/Actions/Actions
 #: components/manage/Contents/Contents
 msgid "Item(s) pasted."
-msgstr "アイテムがペーストされました"
+msgstr "アイテムがペーストされました。"
 
 #: components/manage/Form/Form
 #: components/manage/Form/ModalForm
@@ -663,14 +683,24 @@ msgstr "言語"
 msgid "Last modified"
 msgstr "最終変更"
 
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
+msgid "Lead Image"
+msgstr ""
+
 #: components/manage/Blocks/Maps/Edit
-#: components/manage/Blocks/Video/Edit
 #: helpers/AlignBlock/AlignBlock
 msgid "Left"
 msgstr ""
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
+#: components/manage/Blocks/Maps/MapsSidebar
+#: components/manage/Blocks/Video/VideoSidebar
 msgid "Link to"
+msgstr "リンク先"
+
+#: components/manage/Blocks/Listing/ListingSidebar
+msgid "Listing"
 msgstr ""
 
 #: components/manage/Preferences/PersonalInformation
@@ -702,12 +732,12 @@ msgstr "ログイン名"
 msgid "Make the table compact"
 msgstr ""
 
-#: components/manage/Blocks/Maps/Edit
-msgid "Maps data error"
+#: components/manage/Blocks/Maps/MapsSidebar
+msgid "Map"
 msgstr ""
 
-#: components/manage/Blocks/Maps/Edit
-msgid "Maps instructions"
+#: components/manage/Blocks/Maps/MapsSidebar
+msgid "Maps URL"
 msgstr ""
 
 #: components/theme/ContactForm/ContactForm
@@ -733,11 +763,11 @@ msgstr ""
 
 #: components/manage/Contents/ContentsItem
 msgid "Move to bottom of folder"
-msgstr ""
+msgstr "フォルダーの一番下に移動"
 
 #: components/manage/Contents/ContentsItem
 msgid "Move to top of folder"
-msgstr ""
+msgstr "フォルダーの一番上に移動"
 
 #: components/theme/PasswordReset/PasswordReset
 msgid "My email address is"
@@ -757,18 +787,43 @@ msgstr ""
 msgid "New password"
 msgstr "新しいパスワード"
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
 msgid "No image selected"
+msgstr "画像が選択されていません"
+
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
+msgid "No image set in Lead Image content field"
 msgstr ""
 
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
+msgid "No image set in image content field"
+msgstr ""
+
+#: components/manage/Blocks/Listing/ListingBody
+msgid "No items found in this container."
+msgstr ""
+
+#: components/manage/Blocks/Maps/MapsSidebar
+msgid "No map selected"
+msgstr ""
+
+#: components/manage/Blocks/Listing/ListingBody
 #: components/manage/Widgets/ReferenceWidget
 msgid "No results found."
+msgstr "結果が見つかりません"
+
+#: components/manage/Blocks/Listing/ListingData
+msgid "No selection"
 msgstr ""
 
 #: components/manage/Widgets/ArrayWidget
 #: components/manage/Widgets/ReferenceWidget
 #: components/manage/Widgets/SelectWidget
 msgid "No value"
+msgstr ""
+
+#: components/manage/Blocks/Video/VideoSidebar
+msgid "No video selected"
 msgstr ""
 
 #: components/manage/Workflow/Workflow
@@ -783,7 +838,10 @@ msgstr "None"
 msgid "Ok"
 msgstr ""
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
+#: components/manage/Blocks/Maps/MapsSidebar
+#: components/manage/Blocks/Video/VideoSidebar
 msgid "Open in a new tab"
 msgstr "新しいタブで開く"
 
@@ -791,9 +849,10 @@ msgstr "新しいタブで開く"
 msgid "Open menu"
 msgstr ""
 
-#: components/manage/Sidebar/ImageSidebar
+#: components/manage/Blocks/Image/ImageSidebar
+#: components/manage/Blocks/LeadImage/LeadImageSidebar
 msgid "Origin"
-msgstr ""
+msgstr "参照元"
 
 #: components/manage/Controlpanels/UsersControlpanel
 #: components/theme/Login/Login
@@ -816,7 +875,7 @@ msgstr "ペースト"
 
 #: components/manage/Preferences/PersonalInformation
 msgid "Personal Information"
-msgstr ""
+msgstr "個人情報"
 
 #: components/manage/Preferences/PersonalPreferences
 msgid "Personal Preferences"
@@ -833,6 +892,10 @@ msgstr ""
 
 #: components/manage/Blocks/Video/Edit
 msgid "Please enter a valid URL by deleting the block and adding a new video block."
+msgstr ""
+
+#: components/manage/Blocks/Maps/Edit
+msgid "Please enter the Embed Code provided by Google Maps -> Share -> Embed map. It should contain the <iframe> code on it."
 msgstr ""
 
 #: components/theme/PasswordReset/PasswordReset
@@ -870,7 +933,7 @@ msgstr "プレビュー"
 
 #: components/manage/Toolbar/PersonalTools
 msgid "Profile"
-msgstr ""
+msgstr "プロフィール"
 
 #: components/manage/Contents/Contents
 #: components/manage/Contents/ContentsPropertiesModal
@@ -879,7 +942,7 @@ msgstr "プロパティ"
 
 #: components/manage/Contents/ContentsPropertiesModal
 msgid "Publishing Date"
-msgstr ""
+msgstr "公開日付"
 
 #: components/manage/Preferences/ChangePassword
 #: components/theme/PasswordReset/PasswordReset
@@ -893,7 +956,7 @@ msgstr "もっと読む"
 
 #: components/manage/Contents/Contents
 msgid "Rearrange items by…"
-msgstr ""
+msgstr "何で並べ替えますか"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Reduce complexity"
@@ -932,16 +995,27 @@ msgstr "必須"
 msgid "Required input is missing."
 msgstr "必須"
 
+#: components/manage/Blocks/Listing/ListingData
+msgid "Results limit"
+msgstr ""
+
+#: components/manage/Blocks/Listing/Edit
+msgid "Results preview"
+msgstr ""
+
+#: components/manage/Blocks/Listing/ListingData
+msgid "Reversed order"
+msgstr ""
+
 #: components/manage/History/History
 msgid "Revert to this revision"
-msgstr ""
+msgstr "このリビジョンに戻す"
 
 #: components/manage/Widgets/SchemaWidget
 msgid "Richtext"
 msgstr ""
 
 #: components/manage/Blocks/Maps/Edit
-#: components/manage/Blocks/Video/Edit
 #: helpers/AlignBlock/AlignBlock
 msgid "Right"
 msgstr ""
@@ -955,7 +1029,6 @@ msgid "Roles"
 msgstr "ロール"
 
 #: components/manage/Add/Add
-#: components/manage/Blocks/Video/Edit
 #: components/manage/Controlpanels/UsersControlpanel
 #: components/manage/Edit/Edit
 #: components/manage/Form/Form
@@ -998,7 +1071,7 @@ msgstr "検索"
 
 #: components/manage/Contents/Contents
 msgid "Select columns to show"
-msgstr ""
+msgstr "表示する列を選択"
 
 #: components/manage/Widgets/QuerystringWidget
 msgid "Select criteria"
@@ -1034,7 +1107,7 @@ msgstr ""
 
 #: components/manage/Sharing/Sharing
 msgid "Sharing for {title}"
-msgstr ""
+msgstr "「{title}」の共有"
 
 #: components/manage/Widgets/CheckboxWidget
 #: components/manage/Widgets/QuerystringWidget
@@ -1083,7 +1156,12 @@ msgstr "サイト設定"
 msgid "Sorry, something went wrong with your request"
 msgstr ""
 
+#: components/manage/Blocks/Listing/ListingData
+msgid "Sort on"
+msgstr ""
+
 #: components/manage/Blocks/HTML/Edit
+#: components/manage/Blocks/Listing/ListingData
 msgid "Source"
 msgstr ""
 
@@ -1133,6 +1211,10 @@ msgstr "テーブル"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Table color inverted"
+msgstr ""
+
+#: components/manage/Blocks/ToC/View
+msgid "Table of Contents"
 msgstr ""
 
 #: components/manage/Contents/Contents
@@ -1205,13 +1287,17 @@ msgstr "タイトル"
 msgid "Type"
 msgstr "タイプ"
 
+#: components/manage/Blocks/Video/Edit
+msgid "Type a Video (YouTube, Vimeo or mp4) URL"
+msgstr ""
+
 #: components/manage/Blocks/Text/Edit
 msgid "Type text…"
-msgstr ""
+msgstr "テキストを入力…"
 
 #: components/manage/Blocks/Title/Edit
 msgid "Type the title…"
-msgstr ""
+msgstr "タイトルを入力…"
 
 #: components/manage/Diff/Diff
 msgid "Unified"
@@ -1225,6 +1311,10 @@ msgstr ""
 #: components/manage/Contents/Contents
 msgid "Upload"
 msgstr "アップロード"
+
+#: components/manage/Blocks/LeadImage/Edit
+msgid "Upload a lead image in the 'Lead Image' content field."
+msgstr ""
 
 #: components/manage/Contents/ContentsUploadModal
 msgid "Upload files"
@@ -1279,6 +1369,14 @@ msgstr "ユーザとグループの設定"
 
 #: components/manage/Controlpanels/Controlpanels
 msgid "Version Overview"
+msgstr ""
+
+#: components/manage/Blocks/Video/VideoSidebar
+msgid "Video"
+msgstr ""
+
+#: components/manage/Blocks/Video/VideoSidebar
+msgid "Video URL"
 msgstr ""
 
 #: components/manage/Contents/ContentsItem
@@ -1363,7 +1461,7 @@ msgstr "パスワードを忘れた？"
 
 #: config/Blocks
 msgid "common"
-msgstr ""
+msgstr "一般"
 
 #: components/manage/Blocks/Block/Edit
 msgid "delete"
@@ -1411,7 +1509,7 @@ msgstr "メディア"
 
 #: config/Blocks
 msgid "mostUsed"
-msgstr ""
+msgstr "よく使う物"
 
 #: error
 msgid "or try a different page."
@@ -1419,7 +1517,7 @@ msgstr ""
 
 #: components/theme/Login/Login
 msgid "registration form"
-msgstr ""
+msgstr "登録フォーム"
 
 #: error
 msgid "return to the site root"
@@ -1437,6 +1535,10 @@ msgstr "テキスト"
 msgid "title"
 msgstr "タイトル"
 
+#: config/Blocks
+msgid "toc"
+msgstr ""
+
 #: components/manage/Toolbar/PersonalTools
 msgid "user avatar"
 msgstr ""
@@ -1451,20 +1553,20 @@ msgstr ""
 
 #: components/manage/Contents/Contents
 msgid "{count} selected"
-msgstr ""
+msgstr "{count} 件選択中"
 
 #: components/manage/Actions/Actions
 msgid "{title} copied."
-msgstr ""
+msgstr "「{title}」をコピーしました。"
 
 #: components/manage/Actions/Actions
 msgid "{title} cut."
-msgstr ""
+msgstr "「{title}」をカットしました。"
 
 #: components/manage/Actions/Actions
 msgid "{title} has been deleted."
-msgstr ""
+msgstr "「{title}」を削除しました。"
 
 #: components/theme/Comments/Comments
 msgid "{user} says:"
-msgstr ""
+msgstr "{user} :"
