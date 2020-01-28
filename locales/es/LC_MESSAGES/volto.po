@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Plone\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-03 03:20-0400\n"
-"PO-Revision-Date: 2020-01-27 23:05-0400\n"
+"PO-Revision-Date: 2020-01-28 09:00-0400\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
 "Language-Team: ES <LL@li.org>\n"
 "Language: es\n"
@@ -416,9 +416,7 @@ msgstr "Documento"
 
 #: components/manage/Contents/ContentsUploadModal
 msgid "Drag and drop files from your computer onto this area or click the “Browse” button."
-msgstr ""
-"Arrastre y suelte los archivos desde su computador en esta área o haga clic "
-"al botón “Seleccionar”."
+msgstr "Arrastre y suelte los archivos desde su computador en esta área o haga clic al botón “Seleccionar”."
 
 #: components/manage/Preferences/PersonalInformation
 #: components/theme/Register/Register
@@ -589,7 +587,7 @@ msgstr "Grupos"
 
 #: components/manage/Blocks/Table/Edit
 msgid "Header cell"
-msgstr ""
+msgstr "Celda de encabezado"
 
 #: components/manage/History/History
 #: components/manage/Toolbar/More
