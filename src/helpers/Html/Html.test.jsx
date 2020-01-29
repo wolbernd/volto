@@ -1,6 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import configureStore from 'redux-mock-store';
+import { Provider } from 'react-intl-redux';
+
 import Html from './Html';
+
+const mockStore = configureStore();
 
 jest.mock('../Helmet/Helmet', () => ({
   rewind: () => ({
@@ -28,19 +33,28 @@ jest.mock('../BodyClass/BodyClass', () => ({
 
 describe('Html', () => {
   it('renders a html component', () => {
+    const store = mockStore({
+      intl: {
+        locale: 'en',
+        messages: {},
+      },
+    });
+
     const component = renderer.create(
-      <Html
-        assets={{
-          client: {
-            css: 'style.css',
-            js: 'bundle.js',
-          },
-        }}
-        markup="<div />"
-        store={{
-          getState: () => {},
-        }}
-      />,
+      <Provider store={store}>
+        <Html
+          assets={{
+            client: {
+              css: 'style.css',
+              js: 'bundle.js',
+            },
+          }}
+          markup="<div />"
+          store={{
+            getState: () => {},
+          }}
+        />
+      </Provider>,
     );
     const json = component.toJSON();
     expect(json).toMatchSnapshot();

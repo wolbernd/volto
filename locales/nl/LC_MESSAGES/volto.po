@@ -1298,6 +1298,10 @@ msgstr "Het spijt ons, maar deze pagina bestaat niet…"
 msgid "Title"
 msgstr "Titel"
 
+#: helpers/Html/Html
+msgid "Toolbar"
+msgstr ""
+
 #: components/manage/Widgets/SchemaWidget
 #: components/theme/View/TabularView
 msgid "Type"

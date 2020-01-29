@@ -1279,6 +1279,10 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
+#: helpers/Html/Html
+msgid "Toolbar"
+msgstr ""
+
 #: components/manage/Widgets/SchemaWidget
 #: components/theme/View/TabularView
 msgid "Type"

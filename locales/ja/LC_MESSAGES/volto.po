@@ -1286,6 +1286,10 @@ msgstr ""
 msgid "Title"
 msgstr "タイトル"
 
+#: helpers/Html/Html
+msgid "Toolbar"
+msgstr ""
+
 #: components/manage/Widgets/SchemaWidget
 #: components/theme/View/TabularView
 msgid "Type"

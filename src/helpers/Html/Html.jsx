@@ -8,7 +8,15 @@ import PropTypes from 'prop-types';
 import { Helmet } from '@plone/volto/helpers';
 import serialize from 'serialize-javascript';
 import { join } from 'lodash';
+import { defineMessages, injectIntl } from 'react-intl';
 import { BodyClass } from '../.';
+
+const messages = defineMessages({
+  toolbar: {
+    id: 'Toolbar',
+    defaultMessage: 'Toolbar',
+  },
+});
 
 /**
  * Html class.
@@ -84,7 +92,11 @@ class Html extends Component {
           )}
         </head>
         <body className={bodyClass}>
-          <div role="navigation" aria-label="Toolbar" id="toolbar" />
+          <div
+            role="navigation"
+            aria-label={this.props.intl.formatMessage(messages.toolbar)}
+            id="toolbar"
+          />
           <div id="main" dangerouslySetInnerHTML={{ __html: markup }} />
           <div id="sidebar" />
           <script
@@ -99,4 +111,4 @@ class Html extends Component {
   }
 }
 
-export default Html;
+export default injectIntl(Html);

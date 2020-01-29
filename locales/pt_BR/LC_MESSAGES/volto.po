@@ -1287,6 +1287,10 @@ msgstr "Esta página não parece existir..."
 msgid "Title"
 msgstr "Título"
 
+#: helpers/Html/Html
+msgid "Toolbar"
+msgstr ""
+
 #: components/manage/Widgets/SchemaWidget
 #: components/theme/View/TabularView
 msgid "Type"
