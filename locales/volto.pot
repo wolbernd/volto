@@ -1,7 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2022-04-29T14:57:46.531Z\n"
+=======
+"POT-Creation-Date: 2022-01-21T18:11:01.016Z\n"
+>>>>>>> generated the strings of the PO files
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -1662,6 +1666,7 @@ msgstr ""
 msgid "No options"
 msgstr ""
 
+#: components/manage/BlockChooser/BlockChooser
 #: components/theme/Search/Search
 # defaultMessage: No results found
 msgid "No results found"
@@ -2149,6 +2154,7 @@ msgstr ""
 msgid "Schema updates"
 msgstr ""
 
+#: components/manage/BlockChooser/BlockChooserSearch
 #: components/manage/Blocks/Search/components/SearchInput
 #: components/manage/Blocks/Search/layout/LeftColumnFacets
 #: components/manage/Blocks/Search/layout/RightColumnFacets
