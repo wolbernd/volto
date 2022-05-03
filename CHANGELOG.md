@@ -9,6 +9,8 @@
 
 ### Feature
 
+- Add a new RedirectBlock @erral
+
 ### Bugfix
 
 - Fix sidebar full size bottom opacity on edit page when sidebar is collapsed @ichim-david
